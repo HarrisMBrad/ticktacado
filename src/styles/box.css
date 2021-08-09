@@ -1,0 +1,17 @@
+/*
+* src/styles/box.css
+*/
+.board__box {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1;
+  width: calc(250px / 3);
+  height: calc(250px / 3);
+  font-size: 32px;
+  color: #111;
+  background-color: rgb(240, 11, 228);
+  border: 2px solid rgb(198, 51, 243);
+
+}
