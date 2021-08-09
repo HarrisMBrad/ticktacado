@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from './Button';
 
 export default {
-  title: 'atoms/Button',
+  title: 'Button',
   component: Button,
   argTypes: {
     variants: {
@@ -25,7 +25,7 @@ export const emoji = () =>
 
 export const FirstStory = Template.bind({});
 
-const firststory = FirstStory.args = {
+const actions = FirstStory.args = {
   options: 'lastly',
   label: 'Here We Go!',
   primary: false,
@@ -57,4 +57,7 @@ Small.args = {
   label: 'Button 4',
 };
 
-firststory();
+/*Need to find out why this is not a function. 
+It should function but errors in testing show that this is not a function.
+*/
+actions();
