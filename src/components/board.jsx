@@ -137,7 +137,7 @@ export class Board extends React.Component {
 
                         {/* List with history of moves */}
                         <ul className="board-historyList">
-                            {this.state.history.length === 0 && <span>We're waiting...</span>}
+                            {this.state.history.length === 0 && <span>We're waiting</span>}
 
                             {this.state.history.length !== 0 && this.state.history.map((move, index) => {
                                 return <li key={index}>Move {index + 1}: <strong>{move}</strong></li>
