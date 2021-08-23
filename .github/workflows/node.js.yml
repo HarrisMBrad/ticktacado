@@ -19,13 +19,23 @@ jobs:
     strategy:
       matrix:
         node-version: [10.x, 12.x, 14.x, 15.x]
+        os: [macos-latest, windows-latest, ubuntu-18.04]
+        node: [8, 10, 12, 14]
+        include:
+        # includes a new variable of npm with a value of 6
+      # for the matrix leg matching the os and version
+          - os: windows-latest
+            node: 8
+            npm: 6
 
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
+ 
         with:
           node-version: ${{ matrix.node-version }}
+          
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
