@@ -12,7 +12,7 @@ function App() {
         <div className="container-fluid">
             <Header />
             <Switch>
-                <Route exact path="/" components={HomePage} />
+                <Route exact path="/home" components={HomePage} />
                 <Route path="/about" components={AboutPage} />
                 <Route path="/courses" components={CoursesPage} />
                 <Route component={PageFound} />
