@@ -14,7 +14,7 @@ import './styles/box.css'
 import './styles/buttons.css'
 
 function Hi() {
-  return <p>These are the latest developments to date: 08/23/2021</p>
+  return <p>These are the latest developments to date: 08/24/2021</p>
 
 }
 
