@@ -1,7 +1,7 @@
 {
   "name": "tictacado",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "bootstrap": "5.1.0",
     "immer": "9.0.5",
