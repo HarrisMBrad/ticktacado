@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import myApp from './myApp.js';
+import App from './App.js';
 
-test('renders learn react link', () => {
-  render(<myApp />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders ', () => {
+  render(<Aap />);
+  // I'm not sure yet
+
 });
 
-export default myApp;
+export default App;
