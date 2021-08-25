@@ -4,28 +4,38 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route } from 'react-router-dom'
+import "./index.css";
 
 // Import Board and Scoreboard views
 import { Board } from './components/board'
 import { Scoreboard } from './components/scoreboard'
 
+
 import './styles/board.css'
 import './styles/box.css'
 import './styles/buttons.css'
+import CoursesPage from './components/courses/CoursesPage';
+
+const HelloWorld = () => <h1>`HelloWorld!`</h1>
+
 
 function Hi() {
-  return <p>These are the latest developments to date: 08/25/2021</p>
+
+  console.log(`HelloWorld!`, HelloWorld, null);
+
 
 }
-
-// Create App component
+Hi(HelloWorld);
+// Create Apps component
 class App extends React.Component {
   render() {
     return (
-      <div className="app">
+      <div className="root">
         <BrowserRouter>
           <Route exact path="/" component={Scoreboard} />
           <Route path="/board" component={Board} />
+          <Route path="/courses" component={CoursesPage} />
+          <div className="app"></div>
         </BrowserRouter>
       </div>
     )
@@ -34,5 +44,7 @@ class App extends React.Component {
 
 // Render the App component into DOM
 /**This is a stack of rendering... */
-ReactDOM.render(<Hi />, document.getElementById('app'))
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+
