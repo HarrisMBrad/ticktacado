@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
 class CoursesPage extends React.Component {
   state = {
     course: {
-      title: "A",
+      title: "Aware of State 101",
     },
   };
 
