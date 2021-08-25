@@ -20,7 +20,9 @@ const HelloWorld = () => <h1>`HelloWorld!`</h1>
 
 
 function Hi() {
+
   console.log(`HelloWorld!`, HelloWorld, null);
+
 
 }
 Hi(HelloWorld);
