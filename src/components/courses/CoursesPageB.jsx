@@ -3,7 +3,7 @@ import React from "react";
 class CoursesPage extends React.Component {
   state = {
     course: {
-      title: "B",
+      title: "BeAware of State Model 102",
     },
   };
 
