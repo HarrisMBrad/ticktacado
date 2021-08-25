@@ -11,9 +11,11 @@ import "./index.css";
 import { Board } from './components/board'
 import { Scoreboard } from './components/scoreboard'
 
+
 import './styles/board.css'
 import './styles/box.css'
 import './styles/buttons.css'
+import CoursesPage from './components/courses/CoursesPage';
 
 const HelloWorld = () => <h1>`HelloWorld!`</h1>
 
@@ -31,6 +33,7 @@ class App extends React.Component {
         <BrowserRouter>
           <Route exact path="/" component={Scoreboard} />
           <Route path="/board" component={Board} />
+          <Route path="/courses" component={CoursesPage} />
           <div className="app"></div>
         </BrowserRouter>
       </div>
@@ -40,6 +43,7 @@ class App extends React.Component {
 
 // Render the App component into DOM
 /**This is a stack of rendering... */
-ReactDOM.render(<App />, document.getElementById('root', 'app'));
+ReactDOM.render(<App />, document.getElementById('root'));
+
 
 

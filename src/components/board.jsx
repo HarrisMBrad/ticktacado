@@ -7,6 +7,7 @@ import HomePage from "./home/HomePage";
 import AboutPage from "./about/AboutPage";
 import Header from "./common/Header";
 import PageFound from "./PageFound";
+
 // import Storage object
 import { Storage } from "./../storage/storage";
 
@@ -36,6 +37,7 @@ export class Board extends React.Component {
         <Header />
         <Route exact path="/home" component={HomePage} />
         <Route path="/about" component={AboutPage} />
+        <Route path="/courses" component={AboutPage} />
         <Route component={PageFound} />
       </div>
     );
