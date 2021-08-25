@@ -77,3 +77,5 @@ You can find the blog that I used for this rebuild here: [https://blog.alexdever
 
 ### Story Book 
 To start `yarn storybook`
+
+[![CI](https://github.com/HarrisMBrad/ticktacado/actions/workflows/simple-workflow.yml/badge.svg)](https://github.com/HarrisMBrad/ticktacado/actions/workflows/simple-workflow.yml)
