@@ -12,15 +12,18 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-## Learn More
+### Learn More
 
-Right now this is ready to build out from know TIC Tac Toe Games.
-These files are in repos tttr-three(https://github.com/HarrisMBrad/tttr-three), tttr-four(https://github.com/HarrisMBrad/tttr-four) and tttr-five(https://github.com/HarrisMBrad/tttr-five).
+### Right now this is ready to build out from know Tic-Tac-Toe Games.
+ - Use these repos for quick starts and inspiration. 
+ - [] tttr-three (https://github.com/HarrisMBrad/tttr-three)
+ - [] tttr-four (https://github.com/HarrisMBrad/tttr-four)
+ - [] tttr-five (https://github.com/HarrisMBrad/tttr-five)
 
 ### Reson De Tour
 
  - This is being developed for learning in general. 
- - You can find the blog that I used for this rebuild here: [https://blog.alexdevero.com/how-to-build-simple-tic-tac-toe-game-with-react/] - for IBG ibid.
+ - Used for these rebuilds -  [https://blog.alexdevero.com/how-to-build-simple-tic-tac-toe-game-with-react/] 
 
 ### Story Book 
 To start `yarn storybook`
