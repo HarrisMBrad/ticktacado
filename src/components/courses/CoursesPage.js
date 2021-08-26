@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import * as courseActions from "./components/redux/actions/courseActions";
+import courseActions from "./CoursesPageB";
+//import * as courseActions from "./components/redux/actions/courseActions";
 /**Not sure why this: "Failed To Complie"
  * ---> Error
  * Module not found

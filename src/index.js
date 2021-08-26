@@ -3,50 +3,20 @@
  */
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Route } from 'react-router-dom'
-import "./index.css";
-
 // Import Board and Scoreboard views
 import { Board } from './components/board'
 import { Scoreboard } from './components/scoreboard'
-
-
+import { BrowserRouter, Route } from 'react-router-dom'
+import CoursesPageB from './components/courses/CoursesPageB';
+import "./index.css";
 import './styles/board.css'
 import './styles/box.css'
 import './styles/buttons.css'
-import CoursesPage from './components/courses/CoursesPage';
 
-const HelloWorld = () => <h1>`HelloWorld!`</h1>
-//
-HelloWorld({ greeting: "hello" }, function (response) {
-  console.log(response.farewell);
-});
-// For simple requests:
-HelloWorld.addListener(
-  function (request, sender, sendResponse) {
-    if (sender.id === CoursesPage)
-      return;  // don't allow this extension access
-    else if (request.getTargetData)
-      sendResponse({ targetData: Board });
-    else if (request.activateLasers) {
-      var success = Hi(`Everyone`);
-      sendResponse({ activateLasers: success });
-    }
-  });
-
-// For long-lived connections:
-HelloWorld.addListener(function (port) {
-  port.onMessage.addListener(function Hi() {
-    // See other examples for sample onMessage handlers.
-  });
-});
-//
 function Hi() {
-
-  console.log(`HelloWorld!`, HelloWorld, null);
-
+  console.log(`HelloWorld!`, null);
 }
-Hi(HelloWorld);
+Hi();
 // Create Apps component
 class App extends React.Component {
   render() {
@@ -55,7 +25,7 @@ class App extends React.Component {
         <BrowserRouter>
           <Route exact path="/" component={Scoreboard} />
           <Route path="/board" component={Board} />
-          <Route path="/courses" component={CoursesPage} />
+          <Route path="/courses" component={CoursesPageB} />
           <div className="app"></div>
         </BrowserRouter>
       </div>

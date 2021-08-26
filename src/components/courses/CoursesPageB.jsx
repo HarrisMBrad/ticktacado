@@ -1,6 +1,6 @@
 import React from "react";
 
-class CoursesPage extends React.Component {
+class CoursesPageB extends React.Component {
   state = {
     course: {
       title: "BeAware of State Model 102",
@@ -36,4 +36,4 @@ class CoursesPage extends React.Component {
   }
 }
 
-export default CoursesPage;
+export default CoursesPageB;
