@@ -7,18 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>TickTacado</title>
-  <h1> Survey Form</h1>
 </head>
 
 <body>
+
+
+  <h1> Survey Form</h1>
   <br>
   <section>
     <h3 id="container-fluid">Fluid Student Page</h3>
-    <br>
-
-    <div id="courses"></div>
-    <div id="about"></div>
     <div class="survey" id="root">
+      <br>
+      <div id="courses"></div>
+      <div id="about"></div>
   </section>
   </form>
   <fieldset>
@@ -51,6 +52,47 @@
     <label for="master">Not Sure</label>
   </fieldset>
   <br>
+
+  <div className="form-group">
+    <label htmlFor="subject">
+      Subject
+    </label>
+    <div className="field">
+      <input className="form-control" name="title" onChange={[MockFunction]} type="text" value="Enter a class mate" />
+    </div>
+  </div>
+  <div className="form-group">
+    <label htmlFor="authorId">
+      Favorite Fast Tracker
+    </label>
+    <div className="field">
+      <select className="form-control" name="authorId" onChange={[MockFunction]} value={1}>
+        <option value="">
+          Select Student
+        </option>
+        <option value={1}>
+          Brad Harris
+        </option>
+        <option value={2}>
+          John Handcock
+        </option>
+        <option value={3}>
+          Possibly You
+        </option>
+      </select>
+    </div>
+  </div>
+  <div className="form-group">
+    <label htmlFor="category">
+      Category
+    </label>
+    <div className="field">
+      <input className="form-control" name="category" onChange={[MockFunction]} type="text" value="JavaScript" />
+    </div>
+  </div>
+  <button className="btn" disabled={false} type="submit">
+    Save
+  </button>
   <fieldset>
     <legend>What is your favorite feature of this code base?</legend>
     <input id="newbie" type="radio" name="levels" value="newbie">
@@ -62,6 +104,21 @@
     <br>
     <input id="master-t" type="radio-t" name="levels-t" value="true">...</l>
   </fieldset>
+
+
+  </div>
+  <div className="form-git">
+    <label htmlFor="category">
+      Git-Hub
+    </label>
+    <div className="field">
+      <input className="form-control" name="category" onChange={[MockFunction]} type="text"
+        value="https://github.com/HarrisMBrad" />
+    </div>
+  </div>
+  <button className="button" disabled={false} type="submit">
+    Saving...
+  </button>
 </body>
 
 </html>
