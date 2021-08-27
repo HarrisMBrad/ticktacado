@@ -9,6 +9,7 @@ import Spinner from "../common/Spinner";
 import { toast } from "react-toastify";
 
 export function ManageCoursePage({
+
   courses,
   authors,
   loadAuthors,
@@ -22,6 +23,7 @@ export function ManageCoursePage({
   const [saving, setSaving] = useState(false);
 
   useEffect(() => {
+
     if (courses.length === 0) {
       loadCourses().catch(error => {
         alert("Loading courses failed" + error);
@@ -35,9 +37,10 @@ export function ManageCoursePage({
         alert("Loading authors failed" + error);
       });
     }
-  }, [props.course]);// Note!
+  }, [props.course]);// Note! props.course
 
   function handleChange(event) {
+
     const { name, value } = event.target;
     setCourse(prevCourse => ({
       ...prevCourse,
