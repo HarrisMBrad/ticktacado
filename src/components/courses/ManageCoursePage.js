@@ -35,7 +35,7 @@ export function ManageCoursePage({
         alert("Loading authors failed" + error);
       });
     }
-  }, [props.course]);
+  }, [props.course]);// Note!
 
   function handleChange(event) {
     const { name, value } = event.target;

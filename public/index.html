@@ -7,21 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>TickTacado</title>
+  <h1> Survey Form</h1>
 </head>
 
 <body>
-  <section>
-
-    <div id="app"></div>
-  </section>
   <br>
   <section>
     <h3 id="container-fluid">Fluid Student Page</h3>
     <br>
+
     <div id="courses"></div>
     <div id="about"></div>
-    <div id="root"></div>
+    <div class="survey" id="root">
   </section>
+  </form>
+  <fieldset>
+    <legend>What is your age group?</legend>
+    <input id="newbie" type="radio" name="levels" value="newbie">
+    <label for="newbie">Minor/Under 18/Student</label><br>
+    <input id="intermediate" type="radio" name="levels" value="intermediate">
+    <label for="intermediate">Adult/Over 18/Student</label><br>
+    <input id="master" type="radio" name="levels" value="master">
+    <label for="master">Adult/Over 18/Non-Student</label>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Which option best describes your current role?</legend>
+    <input id="newbie" type="radio" name="levels" value="newbie">
+    <label for="newbie">Full Time Worker</label><br>
+    <input id="intermediate" type="radio" name="levels" value="intermediate">
+    <label for="intermediate">Full Time Learner</label><br>
+    <input id="master" type="radio" name="levels" value="master">
+    <label for="master">Prefer Not To Say</label>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Would you recommend this to a friend?</legend>
+    <input id="newbie" type="radio" name="levels" value="newbie">
+    <label for="newbie">Definitely</label><br>
+    <input id="intermediate" type="radio" name="levels" value="intermediate">
+    <label for="intermediate">Maybe</label><br>
+    <input id="master" type="radio" name="levels" value="master">
+    <label for="master">Not Sure</label>
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>What is your favorite feature of this code base?</legend>
+    <input id="newbie" type="radio" name="levels" value="newbie">
+    <label for="newbie">Challenges</label><br>
+    <input id="intermediate" type="radio" name="levels" value="intermediate">
+    <label for="intermediate">Projects</label><br>
+    <input id="master" type="radio" name="levels" value="master">
+    <label for="master">Community</label>
+    <br>
+    <input id="master-t" type="radio-t" name="levels-t" value="true">...</l>
+  </fieldset>
 </body>
 
 </html>
