@@ -7,7 +7,8 @@ import PageFound from './PageFound';
 import CoursesPage from './courses/CoursesPage';
 
 function App() {
-    console.log("What is this?")
+
+    /**This is the patern to keep and build out as neede for mor routes to pages to come */
     return (
         <div className="container-fluid">
             <Header />
