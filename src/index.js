@@ -14,7 +14,9 @@ import './styles/box.css'
 import './styles/buttons.css'
 
 function Hi() {
+
   console.log(`Tic Tac Toe was in mind: patern to keep and build out as needed for mor routes to pages to come`, null);
+
 }
 Hi();
 // Create Apps component
